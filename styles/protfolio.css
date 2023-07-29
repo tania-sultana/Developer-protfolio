@@ -180,5 +180,50 @@ footer
     color: #757575;
     border-radius: 5px;
     background: #FFF;
+    background-color: #181818;
     border: 0;
+}
+/* responsive website */
+/* mobile device */
+.hide{
+    display: none;
+}
+@media screen and (max-width: 676px){
+    .header{
+        background-image: none;
+    }
+    nav>ul, nav, .banner, .skills-container, .resume-container, .about-info-container, footer{
+        flex-direction: column;
+    }
+    .banner .profile-pic{
+        width: 100%;
+    }
+    nav > ul{
+        gap: 10px;
+    }
+    .banner, #what-i-do-description{
+        padding: 20px;
+
+    }
+    footer, .about{
+        padding: 10px;
+    }
+    .btn-primary{
+        margin-bottom: 15px;
+    }
+    .footer-column{
+        width: 100px;
+    }
+    .contact input[type="text"],.contact input[type="email"] ,textarea{
+        width: 80%;
+    }
+    /* @media screen and (min-width:676px) and (max-width:960px){
+        footer{
+            padding: 30px;
+        }
+        .btn-primary{
+            margin-bottom: 15px;
+        }
+        
+    } */
 }
